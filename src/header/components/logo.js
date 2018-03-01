@@ -3,7 +3,7 @@ import logo from './../../../images/logo-top.png';
 
 function Logo(props){
     return(
-        <div className="Logo">
+        <div className="col-lg-2">
             <img src={logo} />
         </div>
     )

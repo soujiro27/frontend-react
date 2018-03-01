@@ -3,7 +3,7 @@ import React from 'react';
 function Usuario(props){
 
     return (
-        <div className="Usuario">
+        <div className="col-lg-4">
             <p>{props.usuario}</p>
         </div>
     )

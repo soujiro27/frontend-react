@@ -3,7 +3,7 @@ import React from 'react';
 
 function Cuenta(props){
     return(
-        <div className="Cuenta">
+        <div className="col-lg-2">
             <p>{props.cuenta}</p>
         </div>
     )

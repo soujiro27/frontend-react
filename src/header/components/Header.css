@@ -1,0 +1,8 @@
+header
+{
+    border: thin solid red;
+}
+
+header div{
+    border: thin dashed blue;
+}
