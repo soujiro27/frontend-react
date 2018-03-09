@@ -21,7 +21,7 @@ class Home extends Component{
                     <Menu menu={this.props.menuData.data} />
                     <Table>
                         <TableHeader />
-                        <TableRegisters data={this.props.tableData.data} />
+                        <TableRegisters />
                         <PagesContainer pages={this.props.pages.data} />
                     </Table>
 
