@@ -1,0 +1,38 @@
+.sidebar li a{
+    display: flex !important;
+    padding: 18px !important;
+    align-items: center;
+}
+
+.sidebar ul{
+    border:thin solid #afafaf;
+    
+}
+
+.sidebar ul li a .nav-item-icon{
+    background-color: peru;
+    width: 30px !important;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 15px !important;
+    color:white;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    border:thin solid grey;
+    background-color: #eee;
+    color:#888;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .3)
+}
+
+
+.sidebar ul li a p{
+    width: 150px;
+}
+.sidebar{
+    height: 86vh !important;
+    background: url('./../../../images/cream.png');
+    border-right:thin solid #afafaf;
+}

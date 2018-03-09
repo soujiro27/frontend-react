@@ -1,0 +1,69 @@
+.Usuario {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+    padding: 5px 0;
+}
+
+.Usuario svg{
+
+    margin:auto 5px
+}
+
+
+.Usuario:hover > .Usuario-menu{
+    display: inline;
+}
+
+
+.Usuario:hover
+{
+    color:#afafaf
+}
+
+.Usuario .Usuario-menu{
+    display: none;
+    max-width: 281px;
+    position: absolute;
+    padding: 0 15px;
+    top:30px;
+    left: 15px;
+    background-color: white;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+    border-radius: 4px;
+}
+
+.Usuario-menu:before{
+    top:-10px;
+    left:5px;
+    content: '';
+    position: absolute;
+    border-top:5px solid transparent;
+    border-right: 5px solid transparent;
+    border-left:5px solid transparent;
+    border-bottom: 5px solid white;
+   
+}
+
+
+.Usuario .Usuario-menu ul{
+    list-style: none;
+    padding: 3px;
+}
+
+.Usuario .Usuario-menu ul li {
+    padding:5px 0;
+}
+
+.Usuario .Usuario-menu ul li a {
+    display: block;
+    color:#afafaf
+}
+
+
+.Usuario .Usuario-menu ul li a:hover {
+    color:#2c3e50;
+}

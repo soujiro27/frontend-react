@@ -1,0 +1,42 @@
+{
+
+    "menu":[
+            {
+                "icon":"fa fa-home",
+                "nombre":"Incio",
+                "flecha":false,
+                "modulo":"inicio",
+                "id":1
+
+            },
+            {
+                "icon":"fas fa-edit",
+                "nombre":"Catálogos",
+                "flecha":true,
+                "modulo":"configuracion",
+                "id":2
+            },
+            {
+                "icon":"fas fa-cogs",
+                "nombre":"Acciones",
+                "flecha":true,
+                "modulo":"observaciones",
+                "id":3
+            },
+            {
+                "icon":"far fa-file",
+                "nombre":"Informes",
+                "flecha":true,
+                "modulo":"reporteador",
+                "id":4
+            },
+            {
+                "icon":"fas fa-sign-out-alt",
+                "nombre":"Salir",
+                "flecha":false,
+                "modulo":"exit",
+                "id":5
+            }
+
+        ]
+}

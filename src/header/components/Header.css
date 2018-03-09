@@ -1,8 +1,4 @@
-header
-{
-    border: thin solid red;
-}
+header{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 
-header div{
-    border: thin dashed blue;
 }

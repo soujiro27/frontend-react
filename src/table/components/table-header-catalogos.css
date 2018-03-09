@@ -1,0 +1,16 @@
+.table-header-catalogos{
+    display: flex;
+    padding:5px;
+    background: -webkit-linear-gradient(top, #f8f8f8, #f2f2f2);
+    border-bottom:thin solid rgba(0, 0, 0, .2);
+
+}
+
+.table-header-catalogos h3 svg{
+    margin-right: 5px
+}
+
+.table-header-catalogos a{
+    color:white !important;
+    text-decoration: none !important;
+}

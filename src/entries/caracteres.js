@@ -15,7 +15,7 @@ Array.prototype.unique=function(a){
 function load(){
     let Promesas = co(function *(){
         let header = yield axios.get('Api/headerData');
-        let tabla = yield axios.get('Acciones/Registers');
+        let tabla = yield axios.get('Caracteres/Registers');
         let menu = yield axios.get(`/SIA/lstModulosByUsuarioCampana/${header.data.idCuentaActual}`)
         
         render(
@@ -30,4 +30,3 @@ function load(){
 }
 
 load()
-

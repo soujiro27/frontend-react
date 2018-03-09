@@ -28,6 +28,7 @@ module.exports = (env) => {
     devServer: {
       port: 9000,
     },
+    devtool:eval-source-map,
     module: {
       rules: [
         {
@@ -60,12 +61,14 @@ module.exports = (env) => {
           use: {
             loader: 'url-loader',
             options: {
-              limit: 10000,
+              limit: 50000,
               fallback: 'file-loader',
               name: 'images/[name].[hash].[ext]',
             }
           }
         },
+        { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader?limit=10000&mimetype=application/font-woff" },
+        { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader" },
       ]
     },
     plugins

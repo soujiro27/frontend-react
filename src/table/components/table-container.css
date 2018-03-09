@@ -1,0 +1,22 @@
+.table-container{
+    border:thin solid rgba(0, 0, 0, .2);
+    margin-left:235px;
+    width: 82.3%;
+    height: 86vh !important;
+    overflow: hidden;
+    overflow-y: scroll
+  
+}
+
+.table-container table{
+    margin-top: 15px;
+    position: relative !important;
+    
+}
+
+
+
+.table-container table tbody tr:hover{
+    transition: all .9s !important;
+
+}

@@ -2,7 +2,9 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    "Acciones": path.resolve(__dirname, 'src/entries/acciones.js'),
+    "Acciones":['babel-polyfill', path.resolve(__dirname, 'src/entries/acciones.js')],
+    "Caracteres":['babel-polyfill', path.resolve(__dirname, 'src/entries/caracteres.js')],
+    "subTipos":['babel-polyfill', path.resolve(__dirname, 'src/entries/subTipos.js')],
   },
   output: {
     path: path.resolve(__dirname, '../public/'),

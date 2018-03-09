@@ -8,7 +8,8 @@ import Main from './../../../main/components/Main'
 import Menu from './../../../menu/containers/menu';
 import Table from './../../../table/components/table-container'
 import TableHeader  from './../../../table/components/table-header-catalogos'
-import TableRegisters  from './../../../table/containers/catalogos/table-registers-acciones'
+import TableRegisters  from './../../../table/containers/catalogos/table-registers-subTipos';
+import PagesContainer from './../../../table/containers/pagination';
 
 class Home extends Component{
 
@@ -21,6 +22,7 @@ class Home extends Component{
                     <Table>
                         <TableHeader />
                         <TableRegisters data={this.props.tableData.data} />
+                        <PagesContainer pages={this.props.pages.data} />
                     </Table>
 
                 </Main>

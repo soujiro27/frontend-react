@@ -1,0 +1,24 @@
+.visible{
+    display: block;
+    transition:all 20s !important;
+    padding-left:15px !important;
+}
+
+.no-visible{
+    display: none;
+}
+
+.arrow-down svg{
+    transition: all .3s !important;
+    transform:rotate(90deg);
+}
+.arrow-right{
+    transition: all .5s;
+    transform:rotate(0deg);
+}
+
+.selected{
+    background: -webkit-linear-gradient(top, #800000 , #d38483 ) !important;
+    color:white !important;
+    font-weight: bold !important;
+}

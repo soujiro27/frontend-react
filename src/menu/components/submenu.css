@@ -1,0 +1,15 @@
+ul.visible li a svg{
+    margin-right: 5px !important
+}
+
+ul.visible li a:hover{
+    transition:all .5s !important;
+    background: #efefef !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .4)
+}
+
+ul.visible li a:hover >svg{
+    color: #800000 !important;
+    --color:black !important;
+
+}
