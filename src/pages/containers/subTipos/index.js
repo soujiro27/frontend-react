@@ -13,7 +13,20 @@ import PagesContainer from './../../../table/containers/pagination';
 
 class Home extends Component{
 
+    state = {
+        page:1
+    }
+
+    handlePage(number){
+       
+        this.setState({
+            page:number
+       })
+    }
+
+
     render(){
+        
         return(
             <HomeLayout>
                 <Header homeHeaderData={this.props.homeHeaderData.data}/>
@@ -21,8 +34,8 @@ class Home extends Component{
                     <Menu menu={this.props.menuData.data} />
                     <Table>
                         <TableHeader />
-                        <TableRegisters />
-                        <PagesContainer pages={this.props.pages.data} />
+                        <TableRegisters pageNumber={this.state.page} />
+                        <PagesContainer pages={this.props.pages.data} indexPage={this.handlePage.bind(this)} />
                     </Table>
 
                 </Main>

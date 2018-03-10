@@ -5,13 +5,13 @@ import co from 'co';
 class TableRegisters extends Component{
 
     state={
-        page:1,
         datos:[]
     }
 
-    componentWillMount(){
-        let page = this.state.page
-        fetch(`SubTiposDocumentos/Registers/${this.state.page}`).then((response)=>{
+
+    renderList(page){
+      
+        fetch(`SubTiposDocumentos/Registers/${page}`).then((response)=>{
             return response.json()
         })
         .then((registers)=>{
@@ -19,14 +19,37 @@ class TableRegisters extends Component{
                 datos:registers
             })
         })
-        
+    }
+
+    componentWillMount(){
+       
+        this.renderList(this.props.pageNumber)
     }
     
+
+    componentWillReceiveProps(nextProps){
+        this.renderList(nextProps.pageNumber)
+    }
+
+
+    
+    shouldComponentUpdate(nextProps, nextState){
+        return true;
+    }
+        
+    componentWillUpdate(){
+
+    }
+
+
     render(){
+
+
         return(
-            <table className="table table-hover">
+            <table>
                 <thead className="table-light">
                     <tr>
+                        <th>Id</th>
                         <th>Tipo</th>
                         <th>Nombre</th> 
                         <th>Auditoria</th>
@@ -37,6 +60,7 @@ class TableRegisters extends Component{
                     {
                         this.state.datos.map((item)=>(
                             <tr key={item.idSubTipoDocumento}>
+                                <td>{item.idSubTipoDocumento}</td>
                                 <td>{item.idTipoDocto}</td>
                                 <td>{item.nombre}</td>
                                 <td>{item.auditoria}</td>
@@ -52,17 +76,3 @@ class TableRegisters extends Component{
 }
 
 export default TableRegisters
-
-/*
-{
-    this.props.data.map((item) =>(
-        
-        <tr>
-            <td>{item.idTipoDocto}</td>
-            <td>{item.nombre}</td>
-            <td>{item.auditoria}</td>
-            <td>{item.estatus}</td>
-            </tr>
-    ))
-}
-*/

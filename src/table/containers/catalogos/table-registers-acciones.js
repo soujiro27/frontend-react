@@ -5,7 +5,7 @@ class TableRegisters extends Component{
     render(){
         
         return(
-            <table className="table table-hover">
+            <table>
                 <thead className="table-light">
                     <tr>
                         <th>Nombre</th>

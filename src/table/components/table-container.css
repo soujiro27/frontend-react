@@ -3,20 +3,55 @@
     margin-left:235px;
     width: 82.3%;
     height: 86vh !important;
-    overflow: hidden;
-    overflow-y: scroll
   
 }
 
-.table-container table{
-    margin-top: 15px;
-    position: relative !important;
-    
+.table-container table thead tr{
+  display: table
 }
-
 
 
 .table-container table tbody tr:hover{
     transition: all .9s !important;
-
+    background: rgba(0, 0, 0, .1)
 }
+
+.table-container table{
+    display: block;
+    margin-top: 15px !important;
+    border:thin solid rgba(0, 0, 0, .2);
+    width:99% !important;
+    margin:auto .5%;
+    height: 450px !important;
+}
+
+.table-container table tbody tr{
+    height: 50px !important;
+    max-height: 50px !important;
+    width: 100%;
+    display: table;
+}
+
+/* 
+.table-container table{
+    margin-top: 15px;
+    position: relative !important;
+    border:thin solid black;
+    height: 80% !important;
+    display: block;
+}
+
+
+
+.table-container table tbody tr{
+
+    max-height: 50px !important;
+    height: 50px !important;
+    display:block;
+    width:100% !important;
+    border:thin solid peru;
+}
+
+.table-container table tbody tr td{
+    background-color: brown
+} */
