@@ -12,6 +12,7 @@ class Notificaciones extends Component{
         if(this.props.notificaciones >0 ){
 
             notifications_state = 'notifications_on';
+
         } else {
 
             notifications_state = 'notifications_of';
@@ -21,13 +22,31 @@ class Notificaciones extends Component{
     }
     
     
+
+    notifications_icon(){
+
+        let icon
+
+        if(this.props.notificaciones >0 ){
+
+            icon = <i className="far fa-envelope"></i>
+
+        } else {
+
+           icon = <i className="far fa-envelope-open"></i>
+        }
+
+        return icon
+
+    }
+
     
     render(){
 
         return(
             <div className="col-lg-2 Notificaciones">
-            <a href="#!">
-                <i className="far fa-envelope"></i>
+            <a href="/SIA/notificaciones">
+                {this.notifications_icon()}
                 <h4>Tienes
                     <strong className={this.notifications_className()}>{this.props.notificaciones}</strong>
                     Notificaciones

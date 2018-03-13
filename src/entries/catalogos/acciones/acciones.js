@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import axios from 'axios';
 import co from 'co'
-import Home from './../pages/containers/Acciones/index';
+import Home from './../../../pages/containers/Acciones/index';
 
 const app = document.getElementById('app');
 
@@ -15,7 +15,7 @@ Array.prototype.unique=function(a){
 function load(){
     let Promesas = co(function *(){
         let header = yield axios.get('Api/headerData');
-        let tabla = yield axios.get('Caracteres/Registers');
+        let tabla = yield axios.get('Acciones/Registers');
         let menu = yield axios.get(`/SIA/lstModulosByUsuarioCampana/${header.data.idCuentaActual}`)
         
         render(
@@ -30,3 +30,4 @@ function load(){
 }
 
 load()
+

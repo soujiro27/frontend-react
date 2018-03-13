@@ -1,14 +1,21 @@
 const path = require('path');
 
+
+let moduleWorks = 'catalogos';
+
 module.exports = {
   entry: {
-    "Acciones":['babel-polyfill', path.resolve(__dirname, 'src/entries/acciones.js')],
-    "Caracteres":['babel-polyfill', path.resolve(__dirname, 'src/entries/caracteres.js')],
-    "subTipos":['babel-polyfill', path.resolve(__dirname, 'src/entries/subTipos.js')],
+    //"Acciones":['babel-polyfill', path.resolve(__dirname, 'src/entries/catalogos/acciones/acciones.js')],
+    //"Caracteres":['babel-polyfill', path.resolve(__dirname, 'src/entries/catalogos/caracteres/caracteres.js')],
+    //"subTipos":['babel-polyfill', path.resolve(__dirname, 'src/entries/catalogos/subTipos/subTipos.js')],
+    //"Textos":['babel-polyfill', path.resolve(__dirname, 'src/entries/catalogos/textos/textos.js')],
+
+    "subTipos":['babel-polyfill', path.resolve(__dirname, 'src/entries/catalogos/subTipos/create.js')],
+
   },
   output: {
     path: path.resolve(__dirname, '../public/'),
-    filename: 'js/[name].js'
+    filename: `js/${moduleWorks}/create/[name].js`
   },
   devServer: {
     port: 9000,

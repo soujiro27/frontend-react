@@ -3,55 +3,30 @@
     margin-left:235px;
     width: 82.3%;
     height: 86vh !important;
+    overflow-x: scroll !important;
   
 }
 
-.table-container table thead tr{
-  display: table
-}
 
 
 .table-container table tbody tr:hover{
     transition: all .9s !important;
-    background: rgba(0, 0, 0, .1)
+    background: rgba(0, 0, 0, .1);
+    cursor: pointer;
 }
 
 .table-container table{
-    display: block;
     margin-top: 15px !important;
-    border:thin solid rgba(0, 0, 0, .2);
-    width:99% !important;
-    margin:auto .5%;
-    height: 450px !important;
-}
-
-.table-container table tbody tr{
-    height: 50px !important;
-    max-height: 50px !important;
-    width: 100%;
-    display: table;
-}
-
-/* 
-.table-container table{
-    margin-top: 15px;
     position: relative !important;
-    border:thin solid black;
-    height: 80% !important;
-    display: block;
+    border:thin solid rgba(0, 0, 0, .2);
+    width: 98% !important;
+    margin:15px 1% 0 1%;
+
+    
 }
 
+ul.pagination{
 
-
-.table-container table tbody tr{
-
-    max-height: 50px !important;
-    height: 50px !important;
-    display:block;
-    width:100% !important;
-    border:thin solid peru;
+    width: 98% !important;
+    margin: 10px 1% !important;
 }
-
-.table-container table tbody tr td{
-    background-color: brown
-} */

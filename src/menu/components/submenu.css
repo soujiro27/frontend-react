@@ -5,7 +5,6 @@ ul.visible li a svg{
 ul.visible li a:hover{
     transition:all .5s !important;
     background: #efefef !important;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, .4)
 }
 
 ul.visible li a:hover >svg{

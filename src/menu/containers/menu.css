@@ -35,4 +35,5 @@
     height: 86vh !important;
     background: url('./../../../images/cream.png');
     border-right:thin solid #afafaf;
+    border-bottom: thin solid #afafaf;
 }

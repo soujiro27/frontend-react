@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import axios from 'axios';
-import co from 'co';
+import renderHTML from 'react-render-html';
 
 class TableRegisters extends Component{
 
@@ -11,7 +10,7 @@ class TableRegisters extends Component{
 
     renderList(page){
       
-        fetch(`SubTiposDocumentos/Registers/${page}`).then((response)=>{
+        fetch(`DoctosTextos/Registers/${page}`).then((response)=>{
             return response.json()
         })
         .then((registers)=>{
@@ -51,19 +50,17 @@ class TableRegisters extends Component{
                     <tr>
                         <th scope="col" >Id</th>
                         <th scope="col">Tipo</th>
-                        <th scope="col">Nombre</th> 
-                        <th scope="col">Auditoria</th>
+                        <th scope="col">Texto</th> 
                         <th scope="col">Estatus</th>
                     </tr>
                 </thead>
                 <tbody>
                     {
                         this.state.datos.map((item)=>(
-                            <tr key={item.idSubTipoDocumento}>
-                                <td scope="row">{item.idSubTipoDocumento}</td>
+                            <tr key={item.idDocumentoTexto}>
+                                <td scope="row">{item.idDocumentoTexto}</td>
                                 <td>{item.idTipoDocto}</td>
-                                <td>{item.nombre}</td>
-                                <td>{item.auditoria}</td>
+                                <td>{renderHTML(item.texto)}</td>
                                 <td>{item.estatus}</td>
                             </tr>
                         ))

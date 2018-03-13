@@ -5,7 +5,7 @@ import './logo.css';
 function Logo(props){
     return(
         <div className="col-lg-2 Logo">
-            <a href="#!" id="CuentaPublica" >
+            <a href="/SIA" id="CuentaPublica" >
                 <img src={logo} />
             </a>
         </div>

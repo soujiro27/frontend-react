@@ -12,13 +12,13 @@ function Usuario(props){
             <div className="col-lg-3 Usuario-menu">
                 <ul>
                     <li>
-                        <a href="#!">
+                        <a href="/SIA/perfil">
                             <i className="fas fa-user"></i>
                             <span>Perfil</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#!">
+                        <a href="/SIA/cerrar">
                             <i className="fas fa-sign-out-alt"></i>
                             <span>Salir</span>
                         </a>

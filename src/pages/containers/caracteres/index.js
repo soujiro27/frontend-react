@@ -8,7 +8,7 @@ import Main from './../../../main/components/Main'
 import Menu from './../../../menu/containers/menu';
 import Table from './../../../table/components/table-container'
 import TableHeader  from './../../../table/components/table-header-catalogos'
-import TableRegisters  from './../../../table/containers/catalogos/table-registers-acciones'
+import TableRegisters  from './../../../table/containers/catalogos/table-registers-caracteres'
 
 class Home extends Component{
 
